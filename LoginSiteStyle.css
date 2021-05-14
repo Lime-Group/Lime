@@ -1,0 +1,126 @@
+body {
+  font-family: 'Teko', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+* {
+  margin: 0;
+}
+
+.headBar {
+  display: block;
+  position: absolute;
+  top: 20px;
+  height: 75px;
+  width: 100%;
+  background: linear-gradient(90deg, #4645ff, #2fff54);
+}
+.GreatPlace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.whiteCircle1 {
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 12px;
+  background-color: #fff;
+  top: 25px;
+  left: 40px;
+}
+.whiteCircle2 {
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 12px;
+  background-color: #fff;
+  top: 25px;
+  left: 75px;
+}
+.whiteCircle3 {
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 12px;
+  background-color: #fff;
+  top: 25px;
+  left: 110px;
+}
+.textLime {
+  display: block;
+  position: absolute;
+  left: 150px;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.4;
+}
+.place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 600px;
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}
+.placeText {
+  font-size: 25px;
+  color: #4645ff;
+}
+.placeText2{
+  color: #4645ff;
+  font-size: 20px;
+}
+
+.password {
+  margin-top: 20px;
+  width: 400px;
+  height: 30px;
+  border-radius: 15px;
+}
+.password:focus {
+  background-color: #b8ffc4;
+}
+.password:hover {
+  background-color: #5454ff42;
+}
+
+.button {
+  display: flex;
+  margin-top: 30px;
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4645ff, #2fff54);
+  animation: buttonAnim 2s linear infinite;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.button:hover {
+  opacity: .7;
+}
+.buttonText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000;
+}
+.variorText {
+  margin-top: 15px;
+  color: #3a00ad;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+.variorText:hover {
+  color: #c22fff;
+}

@@ -1,0 +1,32 @@
+@keyframes buttonAnim {
+  0%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .7;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes p1 {
+  0%{ top: 32px; }
+  20%{ top: 25px; }
+  40%{ top: 32px; }
+}
+@keyframes p2 {
+  20%{ top: 32px; }
+  40%{ top: 25px; }
+  60%{ top: 32px; }
+}
+@keyframes p3 {
+  40%{ top: 32px; }
+  60%{ top: 25px; }
+  80%{ top: 32px; }
+}
