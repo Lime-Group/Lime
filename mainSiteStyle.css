@@ -184,8 +184,86 @@ body {
   background-color: rgb(147 146 255);
   border-radius: 20px;
   text-align: center;
-  font-size: 30px;
-  line-height: 2.2;
+  font-size: 25px;
+  line-height: 2.5;
   color: #fff;
   cursor: pointer;
+}
+.waves {
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 8px solid black;
+  animation: wavesAnim 1s infinite; 
+  bottom: 0px;
+  left: 0px;
+}
+
+.AddNPBack {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.527);
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.AddNPPlace {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 60%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+}
+.AddNPImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 80%;
+  background-color: #a7a7a7;
+  border-radius: 15px;
+  border: 0px;
+}
+.AddNPText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  height: 50px;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 0px;
+  font-size: 90%;
+}
+.AddNPClose {
+  display: block;
+  position: absolute;
+  right: 10%;
+  bottom: 4%;
+  font-size: 40px;
+  height: 50px;
+  width: 35%;
+  background-color: green;
+  border-radius: 25px;
+}
+.UploadPost {
+  display: block;
+  position: absolute;
+  left: 10%;
+  bottom: 4%;
+  font-size: 40px;
+  height: 50px;
+  width: 35%;
+  background-color: rgb(128, 0, 0);
+  border-radius: 25px;
 }
