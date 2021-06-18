@@ -7,13 +7,13 @@ body {
   margin: 0;
 }
 
-.headBar {
+header {
   display: block;
   position: absolute;
   top: 20px;
   height: 75px;
   width: 100%;
-  background: linear-gradient(90deg, #4645ff, #2fff54);
+  background: linear-gradient(90deg, #1593ff, #00d413);
 }
 .GreatPlace {
   display: flex;
@@ -112,7 +112,7 @@ body {
   width: 250px;
   height: 30px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #4645ff, #2fff54);
+  background: linear-gradient(90deg, #1593ff, #00d413);
   animation: buttonAnim 2s linear infinite;
   align-items: center;
   text-decoration: none;

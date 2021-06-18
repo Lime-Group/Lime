@@ -19,7 +19,7 @@ function AddNPOpen(){
  const AddNPBack = document.querySelector('.AddNPBack');
  AddNPBack.insertAdjacentHTML(
    'beforeend',
-   '<div class="AddNPPlace"><input class="AddNPImage" type="file" accept="image/jpeg,image/png"><input class="AddNPText" placeholder="Текст записи"><div class="AddNPClose" onclick="AddNPClose()"></div><div class="UploadPost" onclick="AddNPClose()"></div></div>'
+   '<div class="AddNPPlace"><input class="AddNPImage" type="file" style="color:transparent;" accept="image/jpeg,image/png"><input class="AddNPText" placeholder="Текст записи"><div class="AddNP Close" onclick="AddNPClose()">Закрыть окно</div><div class="AddNP Upload" onclick="AddNPClose()">Создать</div></div>'
 );
 }
 function AddNPClose() {

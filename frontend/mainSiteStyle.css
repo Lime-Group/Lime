@@ -3,11 +3,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-* {
+*, *::after, *::before {
   margin: 0;
+  outline: none;
 }
 
-.headBar {
+header {
   display: block;
   position: absolute;
   top: 0px;
@@ -216,7 +217,7 @@ body {
   display: flex;
   position: absolute;
   flex-direction: column;
-  justify-content: center;
+  justify-content:last baseline;
   align-items: center;
   height: 80%;
   width: 60%;
@@ -232,38 +233,52 @@ body {
   background-color: #a7a7a7;
   border-radius: 15px;
   border: 0px;
+  margin-top: 7%;
 }
 .AddNPText {
+  padding: 0px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3%;
   height: 50px;
-  width: 80%;
+  width: calc(80% - 50px);
   background-color: #ffffff;
   border-radius: 25px;
   border: 0px;
   font-size: 90%;
+  box-shadow: 5px 5px 10px #797979;
+  transition: .5s ease-in-out;
+  resize: vertical;
 }
-.AddNPClose {
+.AddNPText:focus {
+  box-shadow: none;
+  margin-top: 4%;
+}
+.AddNP {
   display: block;
   position: absolute;
-  right: 10%;
-  bottom: 4%;
-  font-size: 40px;
+  bottom: 7%;
+  color: #fff;
   height: 50px;
   width: 35%;
-  background-color: green;
+  font-size: 20px;
   border-radius: 25px;
+  box-shadow: 5px 5px 10px #797979;
+  text-align: center;
+  line-height: 2.4;
+  font-family: 'Rubik', sans-serif;
+  transition: .5s ease-in-out;
 }
-.UploadPost {
-  display: block;
-  position: absolute;
+.AddNP:hover{
+  box-shadow: none;
+  bottom: 5.5%;
+}
+.Close {
   left: 10%;
-  bottom: 4%;
-  font-size: 40px;
-  height: 50px;
-  width: 35%;
   background-color: rgb(128, 0, 0);
-  border-radius: 25px;
+}
+.Upload {
+  right: 10%;
+  background-color: green;
 }
