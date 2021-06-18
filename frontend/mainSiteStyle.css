@@ -196,7 +196,7 @@ header {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  border: 8px solid black;
+  border: 8px solid rgb(255, 0, 0);
   animation: wavesAnim 1s infinite; 
   bottom: 0px;
   left: 0px;
