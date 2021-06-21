@@ -1,0 +1,33 @@
+{
+  "name": "lime",
+  "version": "1.0.0",
+  "description": "Social Network developed on MEVN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lime-Group/Lime.git"
+  },
+  "keywords": [
+    "mevn",
+    "lime"
+  ],
+  "author": "David Kaim <coolstone1337@ya.by>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lime-Group/Lime/issues"
+  },
+  "homepage": "https://github.com/Lime-Group/Lime#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
