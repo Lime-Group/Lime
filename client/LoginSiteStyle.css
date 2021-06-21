@@ -10,7 +10,7 @@ body {
 header {
   display: block;
   position: absolute;
-  top: 20px;
+  /*top: 20px;*/
   height: 75px;
   width: 100%;
   background: linear-gradient(90deg, #1593ff, #00d413);
