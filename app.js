@@ -1,21 +1,21 @@
-const express = require('express')
-const config = require('config')
-const mongoose = require('mongoose')
+const express = require('express');
+const config = require('config');
+const mongoose = require('mongoose');
 
-const app = express()
+const app = express();
 
 
-const PORT = config.get("port") || 5000
+const PORT = config.get("port") || 5000;
 
 async function start(){ 
     try {
-      await mongoose.connect(config.get('mongoUri'), {})
+      await mongoose.connect(config.get('mongoUri'), {});
     } catch (e) {
-        console.log('Server Error', e.message)
-        process.exit(1)
+        console.log('Server Error', e.message);
+        process.exit(1);
     }
 }
 
-start()
+start();
 
-app.listen(PORT, () => console.log('App has been startet at ${PORT} port!'))
+app.listen(PORT, () => console.log('App has been startet at ${PORT} port!'));
