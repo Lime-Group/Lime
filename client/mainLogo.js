@@ -1,3 +1,8 @@
+const icon = document.getElementById("iconId");
+// const icon1 = document.querySelector('.acIcon1');
+const valueIcon = getComputedStyle(icon).getPropertyValue("height");
+icon.style.width = valueIcon;
+////////////////////////////////////////////////////////////////////////////////
 $(function() {
   $('.phone').mask('+8(000)000-00-00');
 });
@@ -11,7 +16,7 @@ function AddAcIcon(fileName){
 }
 ////////////////////////////////////////////////////////////////////////////////
 function AddNPOpen(){
-  const main = document.querySelector('.main');
+  const main = document.querySelector('body');
   main.insertAdjacentHTML(
     'beforeend',
     '<div class="AddNPBack"></div>'
