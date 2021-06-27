@@ -30,23 +30,7 @@
   60%{ top: 25px; }
   80%{ top: 32px; }
 }
-@keyframes wavesAnim {
-  0%{
-    bottom: 0px;
-    left: 0px;
-  }
-  50%{
-    height: 90px;
-    width: 90px;
-    bottom: -15px;
-    left: -15px;
-    border: 8px solid rgba(0, 0, 0, 0.39);
-  }
-  100%{
-    bottom: 0px;
-    left: 0px;
-  }
-}
+
 @keyframes colorBorder {
   0%{
     border: #ff0101 solid 5px;

@@ -9,25 +9,31 @@ body {
   --main-green-color: #00d413;
   --main-blue-color: #1593ff;
   --main-red-color: #de0303;
+  --main-border1-color: #a5a4a4;
+  --main-border2-color: #5c5c5c;
 }
-  
+ 
 
 header {
   display: flex;
   position: absolute;
   min-width: 620px;
   top: 0px;
-  height: 10%;
+  height: 7%;
   width: 100%;
   flex-direction: row-reverse;
   align-items: center;
   background: linear-gradient(90deg, var(--main-blue-color), var(--main-green-color));
 }
 main {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
   height: 100vh;
   width: 100%;
 }
+
 .lime {
   display: block;
   position: absolute;
@@ -62,18 +68,36 @@ main {
   margin-right: 25px;
   font-size: 55px;
   color: #fff;
-  }
-
-.mainPlace{
-  display: flex;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background-color: #f3f3f3;
-  height: 90%;
-  width: 100%;
 }
 
+.timeline{
+  display: block;
+  justify-content: space-around;
+  height: 93%;
+  width: 50%;
+  border-right: 1px solid var(--main-border1-color);
+  border-left: 1px solid var(--main-border1-color);
+}
+.notification{
+  display: flex;
+  height: 93%;
+  width: 20%;
+  border-right: 1px solid var(--main-border1-color);
+  border-left: 1px solid var(--main-border1-color);
+}
+.messanger{
+  display: flex;
+  height: 93%;
+  width: 30%;
+  border-right: 1px solid var(--main-border1-color);
+  border-left: 1px solid var(--main-border1-color);
+}
+post{
+  height: 80vh;
+  width: 90%;
+  background-color: #00d413;
+  margin-top: 10px;
+}
 .navCircle {
   display: block;
   position: absolute;
@@ -150,29 +174,18 @@ main {
 
 .AddNewPost {
   display: block;
-  position: absolute;
+  position: relative;
   top: 5px;
-  left: 5px;
-  height: 60px;
-  width: calc(50% - 10px);
-  background-color: rgb(147 146 255);
-  border-radius: 20px;
+  left: 1%;
+  height: 10%;
+  width: calc(100% - 4px - 2%);
+  border: 2px solid var(--main-border2-color); 
+  border-radius: 25px;
   text-align: center;
   font-size: 25px;
   line-height: 2.5;
   color: #fff;
   cursor: pointer;
-}
-.waves {
-  display: block;
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 0, 0);
-  animation: wavesAnim 1s infinite; 
-  bottom: 0px;
-  left: 0px;
 }
 
 .AddNPBack {
