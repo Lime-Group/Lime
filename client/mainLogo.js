@@ -1,7 +1,9 @@
 const icon = document.getElementById("iconId");
-// const icon1 = document.querySelector('.acIcon1');
+const AddNewPostIMGSize = document.querySelector('.AddNewPostIMG');
 const valueIcon = getComputedStyle(icon).getPropertyValue("height");
+const AddNewPostIMGSizeValue = getComputedStyle(AddNewPostIMGSize).getPropertyValue("height");
 icon.style.width = valueIcon;
+AddNewPostIMGSize.style.width = AddNewPostIMGSizeValue;
 ////////////////////////////////////////////////////////////////////////////////
 $(function() {
   $('.phone').mask('+8(000)000-00-00');
@@ -11,8 +13,10 @@ var fileName;
 function AddAcIcon(fileName){
   const acIcon = document.querySelector('.acIcon');
   const navAcIcon = document.querySelector('.navAcIcon');
+  const AddNewPostIMG = document.querySelector('.AddNewPostIMG');
   acIcon.style.backgroundImage = "url('sprites/" + fileName + "')";
   navAcIcon.style.backgroundImage = "url('sprites/" + fileName + "')";
+  AddNewPostIMG.style.backgroundImage = "url('sprites/" + fileName + "')";
 }
 ////////////////////////////////////////////////////////////////////////////////
 function AddNPOpen(){
