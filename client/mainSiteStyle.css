@@ -33,7 +33,16 @@ main {
   height: 100vh;
   width: 100%;
 }
-
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  top: 0px;
+  height: 8%;
+  width: 100%;
+  border-bottom: 2px solid var(--main-border2-color);
+}
 .lime {
   display: block;
   position: absolute;
@@ -66,7 +75,7 @@ main {
 .textName {
   display: block;
   margin-right: 25px;
-  font-size: 55px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -75,22 +84,22 @@ main {
   justify-content: space-around;
   height: 93%;
   width: 50%;
-  border-right: 1px solid var(--main-border1-color);
-  border-left: 1px solid var(--main-border1-color);
+  border-right: 1px solid var(--main-border2-color);
+  border-left: 1px solid var(--main-border2-color);
 }
 .notification{
   display: flex;
   height: 93%;
   width: 20%;
-  border-right: 1px solid var(--main-border1-color);
-  border-left: 1px solid var(--main-border1-color);
+  border-right: 1px solid var(--main-border2-color);
+  border-left: 1px solid var(--main-border2-color);
 }
 .messanger{
   display: flex;
   height: 93%;
   width: 30%;
-  border-right: 1px solid var(--main-border1-color);
-  border-left: 1px solid var(--main-border1-color);
+  border-right: 1px solid var(--main-border2-color);
+  border-left: 1px solid var(--main-border2-color);
 }
 post{
   height: 80vh;
@@ -234,38 +243,42 @@ post{
   flex-direction: row;
   justify-content: space-evenly;
 }
-.AddNPImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.AddNPImageI {
+  display: block;
   height: 50px;
   width: 50px;
-  background-color: #a7a7a7;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 0px;
   margin-top: 7%;
+  background-image: url('sprites/fi-rr-picture.svg');
+  opacity: .5;
+  transition: .5s ease-in-out;
 }
-.AddNPText {
-  padding: 0px 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.AddNPImageI:hover {
+  box-shadow: 0px 0px 10px #000;
+  height: 60px;
+  width: 60px;
+  border-radius: 13px;
+}
+.AddNPImage {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+textarea {
+  padding: 20px 20px;
   margin-top: 3%;
   height: 55%;
   width: 80%;
   background-color: #ffffff;
   border-radius: 25px;
-  border: 0px;
-  font-size: 90%;
   border: 2px solid var(--main-border1-color);
-  transition: .5s ease-in-out;
-  resize: vertical;
+  box-sizing: border-box;
+  font-size: 20px;
+  resize: none;
 }
-.fi-rr-picture {
-  height: 60px;
-  width: 60px;
-  
-}
+
 .AddNP {
   display: block;
   position: absolute;
@@ -302,4 +315,14 @@ post{
 .Upload:hover{
   background-color: var(--main-green-color);
   color: white;
+}
+
+.navElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: calc(33.3%);
+  border-left: 1px solid var(--main-border1-color);
+  border-right: 1px solid var(--main-border1-color);
 }
