@@ -261,7 +261,11 @@ post{
   transition: .5s ease-in-out;
   resize: vertical;
 }
-
+.fi-rr-picture {
+  height: 60px;
+  width: 60px;
+  
+}
 .AddNP {
   display: block;
   position: absolute;
