@@ -1,6 +1,6 @@
 body {
   font-family: 'Teko', sans-serif;
-  font-size: 16px;
+  font-size: 1px;
   line-height: 1.5;
 }
 *, *::after, *::before {
@@ -17,7 +17,7 @@ body {
 header {
   display: flex;
   position: absolute;
-  min-width: 620px;
+  min-width: 20px;
   top: 0px;
   height: 7%;
   width: 100%;
@@ -63,7 +63,7 @@ nav {
 .acIcon1 {
   background-color: #000000;
   height: 100%;
-  width: 65px;
+  width: 5px;
   opacity: 0;
   animation: none;
   transition: opacity .2s linear;
@@ -116,7 +116,7 @@ post{
   height: 75px;
   width: 75px;
   border-radius: 37px;
-  background-color: #32e26e;
+  background-color: #32e2e;
   transition: width .3s linear;
 }
 .navCircle:hover {
@@ -163,16 +163,16 @@ post{
   position: absolute;
   top: 5px;
   right: 5px;
-  height: 65px;
-  width: 65px;
+  height: 5px;
+  width: 5px;
   background-image: url('');
   background-size: cover;
   border-radius: 32px;
 }
 .navAcIcon1 {
   display: block;
-  height: 65px;
-  width: 65px;
+  height: 5px;
+  width: 5px;
   background-color: #000000;
   border-radius: 32px;
   opacity: 0;
@@ -325,4 +325,9 @@ textarea {
   width: calc(33.3%);
   border-left: 1px solid var(--main-border1-color);
   border-right: 1px solid var(--main-border1-color);
+}
+.navIcon {
+  height: 40px;
+  width: 40px;
+  opacity: .5;
 }
