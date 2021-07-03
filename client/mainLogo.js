@@ -15,13 +15,24 @@ function chooseTheme(){
   switch(theme){
     case 0: 
       theme = 1;
-      const allItems = document.querySelector('*');
-      allItems.style.setProperty('--main-green-color', '--main-blue-color');
+      document.body.style.setProperty('--main-green-color', '#00870b');
+      document.body.style.setProperty('--main-blue-color', '#0e5797');
+      document.body.style.setProperty('--main-border1-color', '#808080');
+      document.body.style.setProperty('--main-border2-color', '#dadada');
+      document.body.style.setProperty('--np-place-color', '#414141');
+      document.body.style.setProperty('--main-color',  '#1b1b1b');
+      document.body.style.setProperty('--text-color',  'rgb(204, 204, 204)');
+      
     break;
     case 1: 
       theme = 0;
-      const allItems = document.querySelector('*');
-      allItems.style.setProperty('--main-blue-color', '--main-green-color');
+      document.body.style.setProperty('--main-green-color', '#00d413');
+      document.body.style.setProperty('--main-blue-color', '#1593ff');
+      document.body.style.setProperty('--main-border1-color', '#a5a4a4');
+      document.body.style.setProperty('--main-border2-color', '#5c5c5c');
+      document.body.style.setProperty('--np-place-color', '#e0e0e0');
+      document.body.style.setProperty('--main-color',  '#fff');
+      document.body.style.setProperty('--text-color',  '#000');
     break;
   }
 }
