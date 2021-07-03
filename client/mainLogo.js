@@ -1,3 +1,5 @@
+var theme = 0;
+////////////////////////////////////////////////////////////////////////////////
 const icon = document.getElementById("iconId");
 const AddNewPostIMGSize = document.querySelector('.AddNewPostIMG');
 const valueIcon = getComputedStyle(icon).getPropertyValue("height");
@@ -8,6 +10,21 @@ AddNewPostIMGSize.style.width = AddNewPostIMGSizeValue;
 $(function() {
   $('.phone').mask('+8(000)000-00-00');
 });
+////////////////////////////////////////////////////////////////////////////////
+function chooseTheme(){
+  switch(theme){
+    case 0: 
+      theme = 1;
+      const allItems = document.querySelector('*');
+      allItems.style.setProperty('--main-green-color', '--main-blue-color');
+    break;
+    case 1: 
+      theme = 0;
+      const allItems = document.querySelector('*');
+      allItems.style.setProperty('--main-blue-color', '--main-green-color');
+    break;
+  }
+}
 ////////////////////////////////////////////////////////////////////////////////
 var fileName;
 function AddAcIcon(fileName){

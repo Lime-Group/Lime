@@ -1,6 +1,6 @@
 body {
   font-family: 'Teko', sans-serif;
-  font-size: 1px;
+  font-size: 16px;
   line-height: 1.5;
 }
 *, *::after, *::before {
@@ -81,12 +81,16 @@ nav {
 
 .timeline{
   display: block;
-  justify-content: space-around;
+  align-items: center;
   height: 93%;
   width: 50%;
   border-right: 1px solid var(--main-border2-color);
   border-left: 1px solid var(--main-border2-color);
   overflow: scroll;
+}
+.timeline::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 .notification{
   display: flex;
@@ -202,6 +206,7 @@ nav {
   border-radius: 15px;
   border: 2px solid var(--main-border1-color);
   line-height: 2.25;
+  font-size: 25px;
 }
 .AddNewPostIMG {
   height: 70%;
@@ -330,8 +335,12 @@ textarea {
 article {
   display: flex;
   position: relative;
-  height: 70vh ;
-  width: 90%;
+  padding: 3%;
+  left: calc(5% - 2px);
+  margin-top: 1vh;
+  height: 70vh auto;
+  width: 84%;
   border: 2px solid var(--main-border1-color);
   border-radius: 20px;
+  font-size: 20px;
 }
