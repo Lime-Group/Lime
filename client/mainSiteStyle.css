@@ -86,6 +86,7 @@ nav {
   width: 50%;
   border-right: 1px solid var(--main-border2-color);
   border-left: 1px solid var(--main-border2-color);
+  overflow: scroll;
 }
 .notification{
   display: flex;
@@ -324,4 +325,13 @@ textarea {
   height: 60%;
   width: 60%;
   opacity: .5;
+}
+
+article {
+  display: flex;
+  position: relative;
+  height: 70vh ;
+  width: 90%;
+  border: 2px solid var(--main-border1-color);
+  border-radius: 20px;
 }
