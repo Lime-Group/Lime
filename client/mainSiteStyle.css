@@ -9,13 +9,13 @@ body {
   --main-border2-color: #5c5c5c;
   --main-color: #fff;
   --text-color: #2e2e2e;
-  --np-place-color: #e0e0e0;
+  --np-place-color: #ffffff;
+  --post-color: #f0eeff;
 }
 *, *::after, *::before {
   margin: 0;
   outline: none;
 }
- 
 
 header {
   display: flex;
@@ -212,12 +212,13 @@ nav {
   border: 2px solid var(--main-border1-color);
   line-height: 2.25;
   font-size: 25px;
+  background-color: var(--post-color);
 }
 .AddNewPostIMG {
   height: 70%;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('');
+  border: 2px solid var(--main-border1-color);
 }
 
 .AddNPBack {
@@ -277,7 +278,7 @@ textarea {
   height: 55%;
   width: 80%;
   color: #373737;
-  background-color:#d1d1d1;
+  background-color:var(--post-color);
   border-radius: 25px;
   border: 2px solid var(--main-border2-color);
   box-sizing: border-box;
@@ -349,5 +350,7 @@ article {
   border: 2px solid var(--main-border1-color);
   border-radius: 20px;
   font-size: 20px;
+  background-color: var(--post-color);
   color: var(--text-color);
+  word-wrap: break-word;
 }
