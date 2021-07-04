@@ -1,9 +1,12 @@
 var theme = 0;
 ////////////////////////////////////////////////////////////////////////////////
+const infoPostAccIMG = document.querySelector('.infoPostAccIMG');
 const icon = document.getElementById("iconId");
 const AddNewPostIMGSize = document.querySelector('.AddNewPostIMG');
+const infoPostAccIMGValue = getComputedStyle(infoPostAccIMG).getPropertyValue("height");
 const valueIcon = getComputedStyle(icon).getPropertyValue("height");
 const AddNewPostIMGSizeValue = getComputedStyle(AddNewPostIMGSize).getPropertyValue("height");
+infoPostAccIMG.style.width = infoPostAccIMGValue;
 icon.style.width = valueIcon;
 AddNewPostIMGSize.style.width = AddNewPostIMGSizeValue;
 ////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +24,7 @@ function chooseTheme(){
       document.body.style.setProperty('--main-border2-color', '#4e4e4e');
       document.body.style.setProperty('--np-place-color', '#333335');
       document.body.style.setProperty('--main-color',  '#222225');
-      document.body.style.setProperty('--text-color',  'rgb(204, 204, 204)');
+      document.body.style.setProperty('--text-color',  'rgb(202, 202, 202)');
       document.body.style.setProperty('--post-color',  '#414141');
     break;
     case 1: 
