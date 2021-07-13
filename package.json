@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Lime-Group/Lime#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "bulma": "^0.9.3",
     "config": "^3.3.6",
     "express": "^4.17.1",
