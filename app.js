@@ -23,4 +23,4 @@ async function start(){
 
 start();
 
-app.listen(PORT, () => console.log('App has been startet at ' + PORT + ' port!'));
+app.listen(PORT, () => console.log(`App has been startet at ${PORT} port!`));

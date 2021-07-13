@@ -1,4 +1,4 @@
 {
     "port": 5000,
-    "mongoUri": "mongodb+srv://qwertyloop003:lime2021@cluster0.t4qvn.mongodb.net/app?retryWrites=true&w=majority"
+    "mongoUri": "mongodb+srv://qwertyloop003:lime2021@cluster0.t4qvn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
