@@ -1,4 +1,5 @@
 {
     "port": 5000,
+    "secretKey": "yarikpidoras", 
     "mongoUri": "mongodb+srv://qwertyloop003:lime2021@cluster0.t4qvn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
