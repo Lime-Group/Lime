@@ -14,15 +14,15 @@
         <img class="lime" src="sprites/lime.svg">
       </header>
      <main>
-       <div class="place">
-          <div class="placeText">Приветствуем в Lime</div>
-          <input class="password fName" placeholder="Имя" type="text" maxlength="15" step="1" required>
-          <input class="password sName" placeholder="Фамилия" type="text" maxlength="20" step="1">
-          <input class="password phone" placeholder="Номер телефона" type="text" maxlength="15" step="1" required>
-          <input class="password" placeholder="Пароль" type="password" size="14" maxlength="14" required>
-          <a class="button" type="button" href=""><p class="buttonText">Зарегистрироваться</p></a>
+       <form class="place" method="POST">
+          <p class="placeText">Приветствуем в Lime</p>
+          <textarea class="password fName" name="name" placeholder="Имя" type="text" maxlength="15" step="1" required></textarea>
+          <textarea class="password sName" name="surname" placeholder="Фамилия" type="text" maxlength="20" step="1"></textarea>
+          <textarea class="password phone" name="email" placeholder="Email" type="text" maxlength="15" step="1" required></textarea>
+          <textarea class="password" name="password" placeholder="Пароль" type="password" size="14" maxlength="14" required></textarea>
+          <input class="button buttonText" name="" type="submit" href="" value="Зарегистриоваться">
 			  	<a class="variorText" href="InsSite.html">Уже есть аккаунт? Войти</a>
-       </div>
+       </form>
       </div>
     </main>
 
