@@ -78,6 +78,7 @@ main {
   margin-top: 30px;
   width: 250px;
   height: 30px;
+  border: 0;
   border-radius: 10px;
   background: linear-gradient(90deg, #1593ff, #00d413);
   animation: buttonAnim 2s linear infinite;
