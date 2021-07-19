@@ -12,6 +12,8 @@ router.post(
   '/register',
   [
     check('email', 'Некорректный email').isEmail(),
+    check('name', 'Слишком короткое имя').isLength({ min: 2 }),
+    check('Surname', 'Слишком короткая фамилия').isLength({ min: 2 }),
     check('password', 'Минимальная длина пароля 6 символов')
       .isLength({ min: 6 })
   ],
@@ -22,11 +24,11 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({
         errors: errors.array(),
-        message: 'Некорректный данные при регистрации'
+        message: 'Некорректные данные при регистрации'
       })
     }
 
-    const {email, password} = req.body
+    const {email, password, name, surname} = req.body
 
     const candidate = await User.findOne({ email })
 
@@ -35,7 +37,7 @@ router.post(
     }
 
     const hashedPassword = await bcrypt.hash(password, 12)
-    const user = new User({ email, password: hashedPassword })
+    const user = new User({ email, password: hashedPassword, name, surname })
 
     await user.save()
 
@@ -60,7 +62,7 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({
         errors: errors.array(),
-        message: 'Некорректный данные при входе в систему'
+        message: 'Некорректные данные при входе в систему'
       })
     }
 
