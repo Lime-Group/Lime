@@ -6,6 +6,7 @@ const schema = new Schema({
     name: {type: String, required: true},
     surname: {type: String, required: true},
     posts: {type: Types.ObjectId,},
+    videos: {type: Types.ObjectId,}
 });
 
 module.exports = model('User', schema);
