@@ -5,7 +5,7 @@ const schema = new Schema({
     password: {type: String, required: true},
     name: {type: String, required: true},
     surname: {type: String, required: true},
-    role: {type: String, required: true, default: "Admin"},
+    role: {type: String, required: true, default: "User"},
     posts: {type: Types.ObjectId,},
     videos: {type: Types.ObjectId,}
 });
