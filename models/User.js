@@ -11,7 +11,8 @@ const schema = new Schema({
     videos: {type: Types.ObjectId,},
     following: {type: Array, default: []},
     friends: {type: Array, default: []},
-    city : {type: String, max: 50}
+    city: {type: String, max: 50},
+    relationship:{type: Number}
 },
 {timestamps: true},
 );
