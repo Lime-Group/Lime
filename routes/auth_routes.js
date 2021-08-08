@@ -11,9 +11,9 @@ const router = Router()
 router.post(
   '/register',
   [
-    check('email', 'Некорректный email').isEmail(),
     check('name', 'Слишком короткое имя').isLength({ min: 2 }),
-    check('Surname', 'Слишком короткая фамилия').isLength({ min: 2 }),
+    //check('Surname', 'Слишком короткая фамилия').isLength({ min: 2 }),
+    check('email', 'Некорректный email').isEmail(),
     check('password', 'Минимальная длина пароля 6 символов')
       .isLength({ min: 6 })
   ],
@@ -28,7 +28,7 @@ router.post(
       })
     }
 
-    const {email, password, name, surname} = req.body
+    const {name, surname, email, password} = req.body
 
     const candidate = await User.findOne({ email })
 
