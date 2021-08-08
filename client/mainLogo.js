@@ -60,7 +60,18 @@ function AddNPOpen(){
  const AddNPBack = document.querySelector('.AddNPBack');
  AddNPBack.insertAdjacentHTML(
    'beforeend',
-   '<div class="AddNPPlace"><textarea placeholder="Что у вас нового?"></textarea><div class="AddLine"><i class="AddNPImageI"><input class="AddNPImage" type="file" style="color:transparent;" accept="image/jpeg,image/png"></i></div><div class="AddNP Close" onclick="AddNPClose()">Закрыть окно</div><div class="AddNP Upload" onclick="AddNPClose()">Создать</div></div>'
+   '<div class="AddNPPlace">' + 
+   '  <form class="place" action="routes/auth_routes.js" method="POST">' +
+   '    <input placeholder="Что у вас нового?" name="newPost">' +
+   '    <div class="AddLine">' + 
+   '      <i class="AddNPImageI">' +
+   '       <input class="AddNPImage" type="file" style="color:transparent;" accept="image/jpeg,image/png">' +
+   '      </i>' +
+   '    </div>' +
+   '    <div class="AddNP Close" onclick="AddNPClose()">Закрыть окно</div>' +
+   '    <div class="AddNP Upload" onclick="AddNPClose()">Создать</div>' +
+   '  </form>' +
+   '</div>'
 );
 }
 function AddNPClose() {
