@@ -43,12 +43,7 @@ function chooseTheme(){
 ////////////////////////////////////////////////////////////////////////////////
 var fileName;
 function AddAcIcon(fileName){
-  const acIcon = document.querySelector('.acIcon');
-  const navAcIcon = document.querySelector('.navAcIcon');
-  const AddNewPostIMG = document.querySelector('.AddNewPostIMG');
-  acIcon.style.backgroundImage = "url('sprites/" + fileName + "')";
-  navAcIcon.style.backgroundImage = "url('sprites/" + fileName + "')";
-  AddNewPostIMG.style.backgroundImage = "url('sprites/" + fileName + "')";
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 function AddNPOpen(){

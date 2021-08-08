@@ -62,7 +62,7 @@ nav {
   margin-right: 25px;
   height: 85%;
   border-radius: 10px;
-  background-image: url('');
+  background-image: url('sprites/img.png');
   background-size: cover;
 }
 .acIcon1 {
@@ -218,6 +218,7 @@ nav {
   height: 70%;
   background-size: cover;
   border-radius: 50%;
+  background-image: url('sprites/img.png');
   border: 2px solid var(--main-border1-color);
 }
 
