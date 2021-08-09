@@ -12,7 +12,7 @@ const schema = new Schema({
     following: {type: Array, default: []},
     friends: {type: Array, default: []},
     city: {type: String, max: 50},
-    relationship:{type: Number}
+    relationship:{type: Number, enum: [1,2,3]}
 },
 {timestamps: true},
 );
