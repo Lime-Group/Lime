@@ -11,6 +11,7 @@ body {
   --text-color: #2e2e2e;
   --np-place-color: #ffffff;
   --post-color: #f0eeff;
+  --main-violet: rgb(118, 61, 224);
 }
 *, *::after, *::before {
   margin: 0;

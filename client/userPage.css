@@ -1,0 +1,58 @@
+.MODuserMainPage {
+    display: block;
+    align-items: center;
+    height: 93%;
+    width: 60%;
+    overflow: scroll;
+}
+.MODuserMainPage::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+.mainUserPlace {
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.hat {
+    width: calc(100% - 4px);
+    height: 65%;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 2px solid var(--main-blue-color);
+}
+.userPageNav {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    bottom: 0px;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    border: none;
+    background-color: #fff0;
+    align-items: center;
+}
+.userMainIcon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--main-blue-color);
+}
+.userNamePlace {
+    height: 80px;
+    width: auto;
+}
+.userName {
+    height: 50px;
+    font-size: 50px;
+    overflow: hidden;
+}
+.state {
+    height: 30px;
+    font-size: 30px;
+    overflow: hidden;
+}
