@@ -1,5 +1,5 @@
 const {Router} = require('express')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const config = require('config')
 const jwt = require('jsonwebtoken')
 const {check, validationResult} = require('express-validator')
@@ -11,8 +11,6 @@ const router = Router()
 router.post(
   '/register',
   [
-    check('name', 'Слишком короткое имя').isLength({ min: 2 }),
-    //check('Surname', 'Слишком короткая фамилия').isLength({ min: 2 }),
     check('email', 'Некорректный email').isEmail(),
     check('password', 'Минимальная длина пароля 6 символов')
       .isLength({ min: 6 })
@@ -24,11 +22,11 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({
         errors: errors.array(),
-        message: 'Некорректные данные при регистрации'
+        message: 'Некорректный данные при регистрации'
       })
     }
 
-    const {name, surname, email, password} = req.body
+    const {email, password} = req.body
 
     const candidate = await User.findOne({ email })
 
@@ -37,7 +35,7 @@ router.post(
     }
 
     const hashedPassword = await bcrypt.hash(password, 12)
-    const user = new User({ email, password: hashedPassword, name, surname })
+    const user = new User({ email, password: hashedPassword })
 
     await user.save()
 
@@ -62,7 +60,7 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({
         errors: errors.array(),
-        message: 'Некорректные данные при входе в систему'
+        message: 'Некорректный данные при входе в систему'
       })
     }
 

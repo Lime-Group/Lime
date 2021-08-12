@@ -7,7 +7,7 @@ router.put("/:id", async (req, res) => {
     if (req.body.userId === req.params.id || req.body.role == "Admin") {
       if (req.body.password) {
         try {
-          const salt = await bcrypt.genSalt(10);
+          const salt = await bcrypt.genSalt(12);
           req.body.password = await bcrypt.hash(req.body.password, salt);
         } catch (err) {
           return res.status(500).json(err);
@@ -41,7 +41,13 @@ router.delete("/:id", async (req, res) => {
   });
 
 // get an user
-
+router.get("/:id", async(req, res) => {
+    try {
+        const user = await User.findById(req.params.id);
+    } catch (error) {
+        return res.status(500).json(`Что то пошло не так: ${error}`);
+    }
+});
 
 // friend request(follow a user)
 

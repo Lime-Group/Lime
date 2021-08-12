@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/auth', require('./routes/auth_routes'));
+app.use('/api/auth', require('./routes/auth_routes.js'));
 app.use('/api/users', require('./routes/users'));
 
 const PORT = config.get("port") || 5000;
